@@ -15,7 +15,7 @@
           </dd>
           <dd title="客服端">
             <router-link to="/ccc">
-              <img src="./assets/mark_1.png" alt="">
+              <img src="./assets/mark_1.png">
               客服端
             </router-link>
 
@@ -54,7 +54,7 @@
         </div>
         <ul>
           <li>
-            <img src="./assets/g.jpg" alt="">
+            <img src="./assets/g.jpg">
             <span class="el-icon-location"></span>
           </li>
           <li>
@@ -66,20 +66,27 @@
         </ul>
       </div>
     </div>
+
     <router-view/>
+    <footerBot></footerBot>
+
   </div>
 </template>
 
 <script>
-  // import mainTrue from '@/components/mainTrue'
+import footerBot from '@/components/footerBot'
 export default {
   name: 'App',
   data() {
     return {
       restaurants: [],
       state: ''
-    };
+    }
+  },components:{
+    footerBot
   },
+
+
   methods: {
     querySearch(queryString, cb) {
       var restaurants = this.restaurants;
@@ -255,7 +262,7 @@ export default {
     }
   }
 
-  .router-link-exact-active,.router-link-active
+  .router-link-exact-active
  {
     /*padding: 0 20px;*/
     display: inline-block;
