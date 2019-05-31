@@ -6,6 +6,7 @@ import geshou from '@/components/geshou'
 import subNav from '@/components/subNav'
 import woxihuan from '@/components/woxihuan'
 import gedan from '@/components/gedan'
+import xindie from '@/components/xindie'
 
 Vue.use(Router)
 
@@ -20,6 +21,8 @@ export default new Router({
           component: subNav},
         {path: 'geshou',
           component: geshou},
+        {path: 'xindie',
+          component: xindie},
       ]
 
     },{

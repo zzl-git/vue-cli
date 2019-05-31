@@ -70,7 +70,9 @@
     <router-view/>
     <footerBot></footerBot>
 
+
   </div>
+
 </template>
 
 <script>

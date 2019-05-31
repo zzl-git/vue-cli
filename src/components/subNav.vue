@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="subNav">
     <h2>歌单推荐</h2>
     <div class="subNav">
@@ -72,6 +73,106 @@
         <li>日本</li>
         <span class="playAll"><i class="el-icon-caret-right"></i>播放全部</span>
       </ul>
+
+    </div>
+    <el-carousel indicator-position="outside" :autoplay="false" height="380px" style="background-color: #fff" trigger="click">
+      <el-carousel-item v-for="item in xingeData" :key="item">
+        <ul class="gequMain">
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+          <li>
+            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+            <div class="gequBox">
+              <h3>{{item.name}}</h3>
+              <span>{{item.zuozhe}}</span>
+            </div>
+            <div class="time">
+              {{item.time}}
+            </div>
+          </li>
+
+        </ul>
+      </el-carousel-item>
+    </el-carousel>
+
     </div>
     <el-carousel indicator-position="outside" :autoplay="false" height="380px" style="background-color: #fff" trigger="click">
       <el-carousel-item v-for="item in xingeData" :key="item">

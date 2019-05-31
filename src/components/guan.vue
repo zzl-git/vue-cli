@@ -10,7 +10,9 @@
             <router-link to="/geshou">歌手</router-link>
 
           </li>
-          <li>新碟</li>
+          <li>
+            <router-link to="/xindie">新碟</router-link>
+          </li>
           <li>排行榜</li>
           <li>分类歌单</li>
           <li>电台</li>
